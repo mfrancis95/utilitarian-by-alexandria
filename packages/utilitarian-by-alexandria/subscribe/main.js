@@ -1,8 +1,8 @@
-import { MongoClient } from 'mongodb';
+const { MongoClient } = require('mongodb');
 
 const client = new MongoClient(process.env.MONGODB);
 
-const main = async args => {
+exports.main = async args => {
   try {
     await client.db('admin').collection('emails').insertOne({
       email: args.email
@@ -17,5 +17,3 @@ const main = async args => {
     body: 'Test'
   };
 };
-
-module.exports = { main };
