@@ -1,5 +1,5 @@
 packages:
-  - name: subscribe
+  - name: utilitarian-by-alexandria
     actions:
       - name: subscribe
         runtime: nodejs:default
