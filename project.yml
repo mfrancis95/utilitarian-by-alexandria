@@ -1,0 +1,5 @@
+packages:
+  - name: subscribe
+    actions:
+      - name: subscribe
+        runtime: nodejs:default
