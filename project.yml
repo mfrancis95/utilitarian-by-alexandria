@@ -1,3 +1,5 @@
+environment:
+  MONGODB: ${MONGODB}
 packages:
   - name: utilitarian-by-alexandria
     actions:
