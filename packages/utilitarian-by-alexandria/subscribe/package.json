@@ -1,0 +1,9 @@
+{
+  "name": "utilitarian-by-alexandria",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "mongdodb": "^4.11.0"
+  },
+  "devDependencies": {}
+}
