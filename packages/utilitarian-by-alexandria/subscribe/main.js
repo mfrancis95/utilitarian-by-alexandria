@@ -4,6 +4,8 @@ const client = new MongoClient(process.env.MONGODB);
 
 exports.main = async args => {
   try {
+    await client.connect();
+    console.log('Connected to database');
     await client.db('admin').collection('emails').insertOne({
       email: args.email
     });
