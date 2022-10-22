@@ -2,7 +2,7 @@ import { MongoClient } from 'mongodb';
 
 const client = new MongoClient(process.env.MONGODB);
 
-export main = async args => {
+const main = async args => {
   try {
     await client.db('admin').collection('emails').insertOne({
       email: args.email
@@ -17,3 +17,5 @@ export main = async args => {
     body: 'Test'
   };
 };
+
+module.exports = { main };
