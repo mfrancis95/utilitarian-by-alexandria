@@ -16,6 +16,9 @@ exports.main = async args => {
     await client.close();
   }
   return {
-    body: 'Test'
+    headers: {
+      Location: 'http://utilitarianbyalexandria.com/subscribed'
+    },
+    status: 302
   };
 };
