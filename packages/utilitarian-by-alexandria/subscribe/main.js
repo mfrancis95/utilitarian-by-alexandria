@@ -17,7 +17,7 @@ exports.main = async args => {
   }
   return {
     headers: {
-      Location: 'http://utilitarianbyalexandria.com/subscribed.html'
+      Location: 'https://utilitarianbyalexandria.com/subscribed.html'
     },
     statusCode: 302
   };
