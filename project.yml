@@ -4,4 +4,4 @@ packages:
   - name: utilitarian-by-alexandria
     actions:
       - name: subscribe
-        runtime: nodejs:18
+        runtime: 'nodejs:18'
